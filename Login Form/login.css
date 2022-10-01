@@ -1,0 +1,95 @@
+/* design by danish kamal 01/10/2022 contributed in Hacktobfest */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,300;1,400&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:linear-gradient(to top right, rgba(25, 3, 149, 0.801)50%,rgba(12, 0, 187, 0.712)), url("https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=872&q=80.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.container{
+  width: 300px;
+  height: 420px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 7px 15px rgba(54, 50, 92, 0.555);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 0 15px;
+}
+.intro-text p{
+  margin: 10px 0;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+}
+.intro-text h2{
+  text-align: center;
+  font-weight: 600;
+  font-size: 25px;
+}
+.intro-text a{
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 10px;
+  background: #19028a;
+  box-shadow: 0 7px 15px rgba(22,5,207,0.3);
+  border-radius: 5px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  
+}
+.intro-text p a{
+  color: #121212;
+}
+form{
+  height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+form input{
+  padding: 12px 7px;
+  outline: none;
+  border: 1px solid #8c8f94;
+  font-family: 'Poppins', sans-serif;
+  transition: .5s;
+}
+form .check-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+form input:focus{
+  border: 2px solid #16056b;
+}
+.check-box label{
+  font-size: 10px;
+  padding: 0 5px;
+  font-weight: 500;
+}
+form button{
+  border: none;
+  outline: none;
+  padding: 11px 0;
+  background: #16056b;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 18px;
+  box-shadow: 0 7px 15px rgba(22,5,207,0.3);
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+}
+
