@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "poppins" , sans-serif;
+}
+body {
+    background-color: greenyellow;
+}
+.card {
+    width: 640px;
+    height: 400px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;;
+    top: 0;
+    bottom: 0;
+    -webkit-perspective: 1200px;
+    perspective: 1200px;
+    transition: 1s;
+}
+.card:hover {
+    transform: rotate(-5deg);
+}
+.card:hover .outside {
+    transform: rotateY(-130deg);
+}
+
+.inside,.outside {
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    left: 50.1%;
+}
+.inside {
+    background: linear-gradient(
+        to right ,
+        #e0e0e0 , #ffffff 30%);
+    line-height: 3;
+    padding: 0 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    left: 50%;
+}
+.outside {
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    z-index: 1;
+    transform-origin: left;
+    transition: 2s;
+}
+.front,.back {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform: rotateX(0deg);
+}
+.front {
+    background-image: url(ma1.jpg);
+    background-color: #ffffff;
+}
+.back {
+    transform: rotateY(180deg);
+    background: linear-gradient(to left,#e0e0e0,#ffffff 30%);
+}
+.cake {
+    width: 163%;
+    position: absolute;
+    bottom: -1px;
+}
+.top-layer,.middle-layer,.bottom-layer{
+    height: 38px;
+    width: 121px;
+    background-repeat: repeat;
+    background-size:60px 100px;
+    background-image: 28px 0;
+    background-image: linear-gradient(
+        transparent 50px,
+        #fedbab 50px,
+        #fedbab 60px,
+        transparent 60px
+    ),radial-gradient(
+        circle at 30px 5px,
+        #994c10 30px,
+        #fcbf29 31px);
+    border-radius: 10px 10px 0 0;
+    position: relative;
+    margin: auto;
+}
+.middle-layer {
+    transform : scale(0.85);
+    top: 5px;
+}
+.top-layer {
+    transform: scale(0.7);
+    top: 14px;
+}
+.candle {
+    height: 36px;
+    width: 12px;
+    background: repeating-linear-gradient(
+        45deg,
+        #fd3018 0,
+        #fd3018 5px,
+        #ffa89e 5px,
+        #ffa89e 10px
+    );
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 94px;
+}
+.candle:before {
+    content: "";
+    position: absolute;
+    height: 12px;
+    width: 16px;
+    background-color: yellow;
+    border-radius: 0 50% 50% 50%;
+    bottom: 38px;
+    transform: rotate(45deg);
+    left: -2px;
+}
+.outside p {
+    font-size: 23px;
+    text-transform: uppercase;
+    margin-top: 30px;
+    text-align: center;
+    letter-spacing: 6px;
+    color: #000046;
+}
+
+.inside h1 {
+    font-size: 120px;
+    line-height: 120px;
+}
