@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Copy From Input Field</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="clipboard.css">
+    <!-- Design by Danish Kamal  -->
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <textarea type="text" id="text-1" cols="30" rows="10" placeholder="Type for copy to clipboard..."></textarea>
+        <button onclick="copy('text-1')">Copy to Clipboard</button>
+      </div>
+    </div>
+    <script src="clipboard.js"></script>
+  </body>
+</html>
