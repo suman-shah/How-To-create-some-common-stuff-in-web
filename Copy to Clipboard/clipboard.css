@@ -1,0 +1,65 @@
+/* Design by Danish Kamal */
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  height: 100vh;
+  background-color: #585123;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.wrapper {
+  width: 330px;
+}
+.container {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 5px;
+  margin: 20px 0;
+}
+.container input {
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #000000;
+}
+.container button {
+  width: 100%;
+  font-size: 16px;
+  background-color: #585123;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 0;
+  margin-top: 10px;
+  font-weight: 600;
+  text-transform: capitalize !important;
+}
+textarea {
+  width: 100%;
+  resize: none;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 16px;
+  border: 2px solid #585123;
+}
+textarea:focus {
+  outline: none;
+}
+::selection {
+  color: #ffffff;
+  background: #585123;
+}
